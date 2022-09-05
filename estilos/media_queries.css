@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Folha de Estilo para diferentes dispositivos */
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    html{
+        background-image: url(../../../imagens/back-tablet.jpg);
+    }
+
+    #phone{
+        display: none;
+    }
+
+    #tablet{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 993px){
+    html{
+        background-image: url(../../../imagens/back-pc.jpg);
+    }
+
+    #tablet, #phone{
+        display: none;
+    }
+
+    #pc{
+        margin: auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    html{
+        background-image: url(../../../imagens/back-tv.jpg);
+    }
+
+    #tablet, #phone, #pc{
+        display: none;
+    }
+
+    #tv{
+        margin: auto;
+        display: block;
+    }
+}
